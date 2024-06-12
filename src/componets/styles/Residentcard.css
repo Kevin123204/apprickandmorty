@@ -1,0 +1,67 @@
+.residentCard{
+    width: 250px;
+    border: 1px solid #5555;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .5s,
+    box-shadow .5s;
+    background-color: #072226;
+}
+.residentCard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #79B724;
+    transition: transform .5s,
+    box-shadow .5s;
+}
+.residentCard__img {
+    position: relative;
+}
+.residentCard__status {
+    position: absolute;
+    top: 10%;
+    padding: 2px 10px;
+    background-color: #072226;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0 5px 3px 0;
+}
+.residentCard__circle {
+width: 15px;
+aspect-ratio: 1;
+background-color: gray;
+border-radius: 50px;
+}
+.Dead {
+    background-color: red;
+}
+.Alive {
+background-color: green;
+}
+.residentCard__name {
+    padding: 10px;
+    text-align: center;
+}
+.residentCard__separator {
+    width: 80%;
+    margin: 5px 0;
+}
+.residentCard__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 20px 20px;
+}
+
+.residentCard__item {
+display: flex;
+flex-direction: column;
+}
+.residentCard__item span:first-child {
+    padding-left: 20px;
+    font-weight: 400;
+    color: #999;
+}
